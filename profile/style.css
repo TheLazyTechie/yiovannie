@@ -1,0 +1,112 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.home {
+  padding: 10px;
+  background: linear-gradient(to right, #ff4b2b, #ff416c);
+}
+.home a {
+  padding: 20px;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+.edit a {
+  text-decoration: none;
+  color: #ccc;
+  cursor: pointer;
+}
+.edit a:hover {
+  color: #ff4b2b;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.card {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  /* margin-top: 10px; */
+  background-color: #d3e3fd;
+  box-shadow: 0px 0px 1px 1px grey;
+  z-index: 1;
+}
+.avatar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.avatar img {
+  width: 100px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  height: 80vh;
+  position: relative;
+  top: -50px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 1.5px 1px grey;
+}
+form .fullname,
+.email,
+.birth,
+.location {
+  display: flex;
+}
+form section {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+input {
+  padding: 5px;
+  border: none;
+  border-bottom: 1px solid #ff416c;
+}
+.birth section {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  padding: 5px 10px;
+  /* border-bottom: 1px solid #ff416c; */
+}
+.birth section select {
+  padding: 5px 25px;
+  border: none;
+  border-bottom: 1px solid #ff416c;
+}
+.btn-wrapper {
+  display: flex;
+  gap: 10px;
+}
+button {
+  padding: 7px 15px;
+  margin-top: 10px;
+  border-radius: 4px;
+  color: red;
+  cursor: pointer;
+  border: 1px solid #ff416c;
+  background-color: #fff;
+}
+button:hover {
+  color: #fff;
+  background: linear-gradient(to right, #ff4b2b, #ff416c);
+}

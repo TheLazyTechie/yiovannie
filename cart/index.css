@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.flex-container {
+  display: flex;
+  font: 1em sans-serif;
+  padding-bottom: 10px;
+}
+.image-card,
+.product-card {
+  width: 100%;
+}
+.item-description h2 {
+  color: #ff4b2b;
+}
+img {
+  width: 90%;
+  height: 100%;
+  border-radius: 10px;
+}
+.card span {
+  font-size: larger;
+  text-decoration: solid;
+}
+
+h2 {
+  color: #ff416c;
+  font-weight: bold;
+}
+.description {
+  color: #ff416c;
+}
+.description h2 {
+  padding: 5px 0;
+  color: #295691;
+}
+.description select {
+  padding: 5px 15px;
+  color: #295691;
+}
+.btn {
+  display: inline-flex;
+  font-size: larger;
+}
+.btn a {
+  margin: 2px 0;
+  padding: 10px 15px;
+  color: #fff;
+  background: #ff4b2b;
+  background-repeat: no-repeat;
+  border-radius: 5px 0 0 5px;
+  text-decoration: none;
+}
+.btn > .btn-2 {
+  border-radius: 0 5px 5px 0;
+  background: #ee053b;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  background-color: #fff;
+}
+footer .copyright {
+  margin: 0;
+  padding: 15px;
+  color: rgba(197, 15, 15, 0.788);
+  font-size: larger;
+  text-align: center;
+  text-transform: capitalize;
+}
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-wrapper .contact {
+    padding-top: 10px;
+  font-size: 1rem;
+}
+.footer-wrapper .contact li {
+  color: rgb(143, 143, 148);
+}
+
+.footer-wrapper .contact h4,h3 {
+  color: rgb(143, 143, 148);
+}
+
+.footer-wrapper ul {
+  padding: 1rem 0 0 0;
+  list-style-type: none;
+  color: rgba(255, 255, 255, 0.6);
+  color: #ddd;
+}
+
+.footer-wrapper ul li {
+  padding: 5px 0;
+}
+.footer-wrapper .terms a {
+  color: rgb(143, 143, 149);
+}
+footer hr {
+  margin: 0 50px;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 320px) and (max-width:414px){
+    .flex-container{
+        flex-direction: column;
+    }
+    .footer-wrapper{
+        flex-direction: column;
+    }
+    .footer-wrapper .terms p {
+        padding: 5px;
+    }
+}
+
